@@ -1,0 +1,131 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: emoji;
+}
+
+.mybar {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.navbar-toggler{
+    background-color: #fff;
+    border: 2px solid #fff;
+    }
+
+.navbar-brand {
+    color: #fff;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-family: emoji;
+    color: #fff;
+}
+.nav-link:hover{
+    color: antiquewhite;
+}
+
+/* .baner{
+    background-image: url(banner.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+} */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.cont {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('banner.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+.buy{
+    padding: 5px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.hand{
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+/* .card-post{
+    display: flex;
+    text-align: center;
+    column-gap: 2rem;
+
+  }
+  .carder{
+  
+    cursor: pointer;
+    transition: 
+    scale 0.5s ease-in,
+    opacity 0.2s ease-in,
+    filter 0.2s ease-in;
+    
+
+    &:hover{
+      scale: 1.1;
+      
+    }
+
+  }
+  .card-post:has(.carder:hover) .carder:not(:hover){
+    scale: 0.9;
+opacity: 0.8;
+filter: blur(4px);
+
+  } */
+
+  .bgcolor{
+    background-color: #efefef;
+    height: auto;
+    width: 100%;
+  }
+  .box1{
+    border-radius: 4px;
+    background-color: #fff;
+    width: 100%;
+    height: 33vh;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+  }
+  .house{
+    width: 100%;
+    height: 40vh;
+    border-radius: 3px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+  }
+
+  /* footer */
+
+  .try:hover ~ hr{
+    transition: 1s ease-in;
+    width: 80% !important;
+  
+}
+.try:hover ~ .alag{
+    width: 60% ;
+}
