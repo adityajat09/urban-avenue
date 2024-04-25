@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness-Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .bgimg {
+            background-image: url(bgimg.jpg);
+            background-size: cover;
+            width: 100%;
+            height: 700px;
+            background-repeat: no-repeat;
+        }
+
+        .logo {
+            margin-top: 35px;
+            margin-left: 130px;
+        }
+
+        .home {
+            color: #f36100;
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 2px solid #f36100;
+        }
+
+        .navbar {
+            margin-top: -35px;
+            margin-left: 400px;
+
+        }
+
+        .about {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            margin-left: 35px;
+        }
+
+        .about:hover {
+            color: #f36100;
+            border-bottom: 2px solid #f36100;
+        }
+
+        .shape {
+            float: right;
+            color: #fff;
+            margin-right: 177px;
+            margin-top: 200px;
+
+        }
+
+        .info {
+            text-decoration: none;
+            padding: 13px;
+            border: 2px solid #f36100;
+            margin-left: 12px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .info:hover {
+            background-color: #f36100;
+        }
+
+        #black {
+            background-color: #0a0a0a;
+            width: 100%;
+            height: 700px;
+        }
+
+        .icons {
+            margin-left: 200px;
+        }
+
+        .cycle {
+            border: 4px solid #fff;
+            color: #fff;
+            width: 300px;
+            height: 115px;
+            margin-left: 108px;
+            margin-top: -8px;
+            font-weight: 700;
+        }
+
+        .cycle:hover {
+            border: 4px solid #f36100;
+        }
+
+        .cycle2 {
+            border: 4px solid #fff;
+            color: #fff;
+            width: 300px;
+            height: 115px;
+            margin-left: 528px;
+            margin-top: -123px;
+            font-weight: 700;
+        }
+
+        .cycle2:hover {
+            border: 4px solid #f36100;
+        }
+
+        .cycle3 {
+            border: 4px solid #fff;
+            color: #fff;
+            width: 300px;
+            height: 115px;
+            float: right;
+            margin-right: 87px;
+            margin-top: -123px;
+            font-weight: 700;
+        }
+
+        .cycle3:hover {
+            border: 4px solid #f36100;
+        }
+
+        .imggroup {
+            width: 300px;
+            height: 300px;
+            margin-left: 108px;
+            border: 4px solid #fff;
+        }
+
+        .imggroup:hover {
+            border: 4px solid #f36100;
+            transform: scale(1.1);
+        }
+
+        .offer {
+            background-color: #151515;
+            width: 100%;
+            height: 3720px;
+        }
+
+        .indoor {
+            margin-left: 55px;
+        }
+
+        .cardio {
+            background-color: #0a0a0a;
+            margin-left: 55px;
+            margin-top: -54px;
+            width: 370px;
+            height: 125px;
+        }
+
+        .rotate1 {
+            padding: 20px;
+        }
+
+        .cardio2 {
+            background-color: #0a0a0a;
+            margin-left: 483px;
+            margin-top: -125px;
+            width: 372px;
+            height: 125px;
+        }
+
+        .rotate2 {
+            padding: 20px;
+        }
+
+        .cardio3 {
+            background-color: #0a0a0a;
+            margin-right: 60px;
+            margin-top: -125px;
+            float: right;
+            width: 370px;
+            height: 125px;
+        }
+
+        .rotate3 {
+            padding: 20px;
+        }
+
+        .right1 {
+            margin-left: 273px;
+            background-color: #151515;
+            padding: 13px;
+        }
+
+        .indoor1 {
+            margin-left: 84px;
+
+        }
+
+        .cardio4 {
+            background-color: #0a0a0a;
+            margin-left: 55px;
+            margin-top: -55px;
+            width: 570px;
+            height: 125px;
+        }
+
+        .cardio5 {
+            background-color: #0a0a0a;
+            margin-left: 713px;
+            margin-top: -125px;
+            width: 570px;
+            height: 125px;
+        }
+
+        .banner {
+            background-image: url(banner-bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 450px;
+        }
+
+        .app {
+            background-color: inherit;
+            border: 2px solid #f36100;
+            color: #c4c4c4;
+            text-decoration: none;
+            padding: 13px;
+            font-weight: bold;
+        }
+
+        .app:hover {
+            background-color: #f36100;
+        }
+
+        .plan1 {
+            color: #c4c4c4;
+            border: 1px solid #464646;
+            width: 300px;
+            text-align: center;
+            height: 490px;
+            margin-left: 100px;
+            font-weight: bold;
+        }
+
+        .plan1:hover {
+            background-color: #fff;
+            color: #0a0a0a;
+        }
+
+        .plan2 {
+            color: #c4c4c4;
+            border: 1px solid #464646;
+            width: 300px;
+            text-align: center;
+            height: 490px;
+            margin-top: -492px;
+            margin-left: 540px;
+            font-weight: bold;
+        }
+
+        .plan2:hover {
+            background-color: #fff;
+            color: #0a0a0a;
+        }
+
+        .plan3 {
+            color: #c4c4c4;
+            border: 1px solid #464646;
+            width: 300px;
+            text-align: center;
+            height: 490px;
+            margin-top: -492px;
+            margin-left: 962px;
+            font-weight: bold;
+        }
+
+        .plan3:hover {
+            background-color: #fff;
+            color: #0a0a0a;
+        }
+
+        .now {
+            background-color: #464646;
+            color: #fff;
+            padding: 13px;
+            padding-left: 60px;
+            padding-right: 60px;
+            text-decoration: none;
+        }
+
+        .now:hover {
+            background-color: #f36100;
+        }
+
+        .push {
+            width: 650px;
+            height: 400px;
+        }
+
+        .ball {
+            width: 342px;
+            height: 400px;
+        }
+
+        .expert {
+            font-weight: bold;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+
+        .ment {
+            text-decoration: none;
+            color: #c4c4c4;
+            float: right;
+            background-color: inherit;
+            border: 2px solid #f36100;
+            padding: 13px;
+            margin-right: 95px;
+            margin-top: -48px;
+        }
+
+        .ment:hover {
+            color: #fff;
+            background-color: #f36100;
+        }
+
+        .map {
+            background-color: #0a0a0a;
+            width: 100%;
+            height: 150px;
+        }
+
+        .mobile {
+            margin-top: -48px;
+            margin-left: 400px;
+        }
+
+        .email {
+            margin-top: -36px;
+            margin-left: 755px;
+        }
+
+        footer {
+            background-color: black;
+            width: 100%;
+            height: 300px;
+        }
+
+        .useful {
+            margin-top: -150px;
+            margin-left: 600px;
+        }
+
+        .fot {
+            margin-left: 35px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .support{
+            margin-left: 828px;
+            font-size: 18px;
+            font-weight: bold; 
+            margin-top: -132px; 
+        }
+        .side{
+            float: right;
+            margin-top: -131px;
+            margin-right: 15px;
+        }
+        .last{
+            border: 1px solid gray;
+            margin-top: 50px;
+            width: 70%;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgimg">
+        <div>
+            <a href="#logo"><img class="logo" src="logo.png"></a>
+        </div>
+        <div class="navbar">
+            <a class="home" href="#">HOME</a>
+            <a class="about" href="#">ABOUT US</a>
+            <a class="about" href="#">CLASSES</a>
+            <a class="about" href="#">SERVICES</a>
+            <a class="about" href="#">OUR TEAM</a>
+            <a class="about" href="#">PAGES</a>
+            <a class="about" href="#">CONTACT</a>
+        </div>
+        <div class="shape">
+            <p style="font-size: 20px; font-weight: 700; font-family:sans-serif;">SHAPE YOUR BODY</p><br>
+            <h1 style="font-size: 62px;">BE <SPAN style="color: #f36100;">STRONG</SPAN> <br>TRAINING HARD</h1><br>
+            <a class="info" href="#info">GET INFO</a>
+        </div>
+    </div>
+
+    <div id="black"><br><br><br>
+        <center>
+            <p style="color: #f36100; font-weight: 700;">WHY CHOSE US?</p><br>
+            <h2 style="font-weight: 700; color: #fff;">PUSH YOUR LIMITS FORWARD</h2>
+        </center><br><br><br>
+        <div>
+            <a href="#"><img class="imggroup" src="Seated-Lat-Pulldown.webp"></a>
+            <a href="#"><img class="imggroup" src="mbprotin.webp"></a>
+            <a href="#"><img class="imggroup" src="trainer.jpg"></a>
+        </div>
+        <div class="cycle">
+            <p style="text-align: center; margin-top: 7px;">Modern equipment</p><br>
+            <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut dolore facilisis.</p>
+        </div>
+        <div class="cycle2">
+            <p style="text-align: center; margin-top: 7px;">Modern equipment</p><br>
+            <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut dolore facilisis.</p>
+        </div>
+        <div class="cycle3">
+            <p style="text-align: center; margin-top: 7px;">Modern equipment</p><br>
+            <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut dolore facilisis.</p>
+        </div>
+    </div>
+    <div class="offer">
+        <center><br><br><br>
+            <p style="color: #f36100;font-weight: 700; font-size: 20px;">OUR CLASSES</p><br>
+            <P style="color: #fff; font-size: 26px;font-weight: 700; ">WHAT WE CAN OFFER</P>
+        </center><br><br>
+        <div id="indoor">
+            <a class="indoor" href="#"><img src="class-1.jpg"></a>
+            <a class="indoor" href="#"><img src="class-2.jpg"></a>
+            <a class="indoor" href="#"><img src="class-3.jpg"></a>
+        </div>
+
+        <div class="cardio">
+            <div class="rotate1">
+                <p style="color: #f36100; margin-top: 50px;margin-left: 40px;font-weight: 700;">STRENGTH</p>
+                <P style="color: #fff; margin-left: 40px; font-weight: 700;">WEIGHTLIFTING</P>
+                <div style="margin-top: -32px;">
+                    <a class="right1" href="#"><i class="fa-solid fa-chevron-right"
+                            style="color: #fff; font-size: 22px;"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardio2">
+            <div class="rotate2">
+                <p style="color: #f36100; margin-top: 50px;margin-left: 40px;font-weight: 700;">STRENGTH</p>
+                <P style="color: #fff; margin-left: 40px; font-weight: 700;">WEIGHTLIFTING</P>
+                <div style="margin-top: -32px;">
+                    <a class="right1" href="#"><i class="fa-solid fa-chevron-right"
+                            style="color: #fff; font-size: 22px;"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardio3">
+            <div class="rotate3">
+                <p style="color: #f36100; margin-top: 50px;margin-left: 40px;font-weight: 700;">STRENGTH</p>
+                <P style="color: #fff; margin-left: 40px; font-weight: 700;">WEIGHTLIFTING</P>
+                <div style="margin-top: -32px;">
+                    <a class="right1" href="#"><i class="fa-solid fa-chevron-right"
+                            style="color: #fff; font-size: 22px;"></i></a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div>
+            <a class="indoor" href="#"><img src="class-4.jpg"></a>
+            <a class="indoor1" href="#"><img src="class-5.jpg"></a>
+        </div>
+        <div class="cardio4">
+            <div class="rotate1">
+                <p style="color: #f36100; margin-top: 50px;margin-left: 40px;font-weight: 700;">STRENGTH</p>
+                <P style="color: #fff; margin-left: 40px; font-weight: 700;">WEIGHTLIFTING</P>
+                <div style="margin-top: -32px;">
+                    <a class="right1" href="#"><i class="fa-solid fa-chevron-right"
+                            style="color: #fff; font-size: 22px;"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardio5">
+            <div class="rotate1">
+                <p style="color: #f36100; margin-top: 50px;margin-left: 40px;font-weight: 700;">STRENGTH</p>
+                <P style="color: #fff; margin-left: 40px; font-weight: 700;">WEIGHTLIFTING</P>
+                <div style="margin-top: -32px;">
+                    <a class="right1" href="#"><i class="fa-solid fa-chevron-right"
+                            style="color: #fff; font-size: 22px;"></i></a>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+
+        <div class="banner">
+            <center><br><br><br><br><br><br><br><br><br>
+                <div>
+                    <p style="color: #fff;font-size: 30px; font-weight: 700;">REGISTRATION NOW TO GET MORE DEALS</p><br>
+                    <p style="color: #c4c4c4;font-weight: 700;">WHERE HEALTH, BEAUTY AND FITNESS MEET.</p><br><br>
+                    <a class="app" href="#btn">APPOINTMENT</a>
+                </div>
+        </div>
+        </center>
+        <div>
+            <center><br><br><br>
+                <div>
+                    <p style="color: #f36100; font-weight: 700;">OUR PLAN</p><br>
+                    <p style="color: #c4c4c4; font-weight: 700; font-size: 25px;">CHOOSE YOUR PRICING PLAN</p>
+                </div>
+                <center>
+        </div>
+        <br><br><br>
+        <div class="plan1"><br><br>
+            <div class="pp">
+                <p style="font-size: 20px; font-weight: 700;">Class drop-in </p><br>
+                <p style="color: #f36100; font-size: 46px;font-weight: bold;">$ 39.0</p><br>
+                <p>SINGLE CLASS</p><br><br>
+                <p>Free riding</p><br>
+                <p>Unlimited equipments</p><br>
+                <p>Personal trainer</p><br>
+                <p>Weight losing classes</p><br>
+                <p>Month to mouth</p><br>
+                <p>No time restriction</p><br><br>
+                <a class="now" href="#">ENROLL NOW</a>
+            </div>
+        </div>
+
+        <div class="plan2"><br><br>
+            <div class="pp">
+                <p style="font-size: 20px; font-weight: 700;">12 Month unlimited</p><br>
+                <p style="color: #f36100; font-size: 46px;font-weight: bold;">$ 99.0</p><br>
+                <p>SINGLE CLASS</p><br><br>
+                <p>Free riding</p><br>
+                <p>Unlimited equipments</p><br>
+                <p>Personal trainer</p><br>
+                <p>Weight losing classes</p><br>
+                <p>Month to mouth</p><br>
+                <p>No time restriction</p><br><br>
+                <a class="now" href="#">ENROLL NOW</a>
+            </div>
+        </div>
+
+        <div class="plan3"><br><br>
+            <div class="pp">
+                <p style="font-size: 20px; font-weight: 700;">6 Month unlimited</p><br>
+                <p style="color: #f36100; font-size: 46px;font-weight: bold;">$ 59.0</p><br>
+                <p>SINGLE CLASS</p><br><br>
+                <p>Free riding</p><br>
+                <p>Unlimited equipments</p><br>
+                <p>Personal trainer</p><br>
+                <p>Weight losing classes</p><br>
+                <p>Month to mouth</p><br>
+                <p>No time restriction</p><br><br>
+                <a class="now" href="#">ENROLL NOW</a>
+            </div>
+        </div>
+        <br><br><br>
+        <div>
+            <a href="#"><img class="push" src="gallery-1.jpg"></a>
+            <a href="#"><img class="ball" src="gallery-2.jpg"></a>
+            <a href="#"><img class="ball" src="gallery-3.jpg"></a>
+            <a href="#"><img class="ball" src="gallery-4.jpg"></a>
+            <a href="#"><img class="ball" src="gallery-5.jpg"></a>
+            <a href="#"><img class="push" src="gallery-6.jpg"></a>
+        </div>
+
+        <div class="expert">
+            <p style="color: #f36100; ">OUR TEAM</p>
+            <p style="color: #fff; margin-top: 10px;font-size: 25px;">TRAIN WITH EXPERTS</p>
+            <a class="ment" href="#APPOINTMENT">APPOINTMENT</a><br>
+            <div>
+                <img style="margin-left: 10px;" src="team-3.jpg">
+                <img style="margin-left: 10px;" src="team-5.jpg">
+                <img style="margin-left: 10px;" src="team-4.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="map">
+        <div><br><br><br>
+            <p style="background-color: #f36100;padding: 11px;width: 36px;margin-left:110px;border-radius: 15px;">
+                <i class="fa-solid fa-location-dot" style="color: #fff;font-size: 30px;margin-left: 6px;"></i>
+            </p>
+            <p style="color: #fff;margin-top: -44px;margin-left: 182px;">333 Middle Winchendon Rd, Rindge,<br>
+                NH 03461
+            </p>
+        </div>
+        <div class="mobile">
+            <p style="background-color: #f36100;padding: 11px;width: 36px;margin-left:110px;border-radius: 15px;">
+                <i class="fa-solid fa-mobile" style="color: #fff;font-size: 30px;margin-left: 6px;"></i>
+            </p>
+            <p style="color: #fff;margin-top: -34px;margin-left: 185px;">125-711-811 125-668-886</p>
+        </div>
+        <div class="email">
+            <p style="background-color: #f36100;padding: 11px;width: 36px;margin-left:110px;border-radius: 15px;">
+                <i class="fa-solid fa-envelope" style="color: #fff;font-size: 30px;margin-left: 6px;"></i>
+            </p>
+            <p style="color: #fff;margin-top: -34px;margin-left: 200px;">Support.gymcenter@gmail.com</p>
+        </div>
+    </div>
+</body>
+<footer><br><br><br>
+    <div style="margin-left: 100px;">
+        <a href="#"><img src="logo.png"></a><br><br>
+        <p style="color: #fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+            sed do eiusmod tempor incididunt ut labore dolore<br>
+            magna aliqua endisse ultrices gravida lorem.
+        </p><br>
+        <div>
+            <a href="#"><i class="fa-brands fa-facebook-f" style="color: #c4c4c4; font-size: 15px;"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"
+                    style="color: #c4c4c4; font-size: 15px;margin-left: 20px;"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"
+                    style="color: #c4c4c4; font-size: 15px;margin-left: 20px;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"
+                    style="color: #c4c4c4; font-size: 15px;margin-left: 20px;"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"
+                    style="color: #c4c4c4; font-size: 15px;margin-left: 20px;"></i></a>
+        </div>
+    </div>
+    <div class="useful">
+        <p style="color: #fff;font-size: 25px;font-weight: bold;">Useful links</p><br>
+        <ul>
+            <li class="fot"><a style="text-decoration: none;color: #fff;" href="#">About</a></li>
+            <li class="fot"><a style="text-decoration: none;color: #fff;" href="#">Blog</a></li>
+            <li class="fot"><a style="text-decoration: none;color: #fff;" href="#">Classes</a></li>
+            <li class="fot"><a style="text-decoration: none;color: #fff;" href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="support">
+        <p style="color: #fff;font-size: 25px;font-weight: bold;margin-left: 14px;">Support</p><br>
+        <ul>
+            <li class="fot"><a style="text-decoration: none;color: #fff;" href="#">About</a></li>
+            <li class="fot"><a style="text-decoration: none;color: #fff;" href="#">Blog</a></li>
+            <li class="fot"><a style="text-decoration: none;color: #fff;" href="#">Classes</a></li>
+            <li class="fot"><a style="text-decoration: none;color: #fff;" href="#">Contact</a></li>
+        </ul>
+</div>
+<div class="side">
+    <p style="color: #fff;font-size: 25px;font-weight: bolder;">Tips & Guides</p><br>
+    <a style="color: #fff;text-decoration: none;" href="#">Physical fitness may help prevent depression, anxiety</a><br><br><br>
+     <a style="color: #fff; text-decoration: none;" href="#">Fitness: The best exercise to lose belly fat and tone up...</a>
+</div>
+<div class="last"></div><br>
+<p style="color: #fff;text-align: center;">Copyright ©2023 All rights reserved | This template is made with  by Colorlib</p>
+</footer>
+
+</html>
